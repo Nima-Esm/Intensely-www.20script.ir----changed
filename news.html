@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="fa_IR" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>اخبار و اطلاعیه‌های رسمی | پرتال اتحادیه اصناف</title>
+
+    <!-- فونت استاندارد وزیر (Vazirmatn FD) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/misc/Farsi-Digits/Vazirmatn-FD-font-face.css"
+    />
+
+    <!-- استایل‌ها -->
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="assets/images/favicon.ico"
+    />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link href="assets/css/theme-color/default-theme.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="font.css" rel="stylesheet" />
+
+    <style>
+      /* استایل‌های اختصاصی صفحه اخبار */
+      .news-page-hero {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        color: #fff;
+        padding: 50px 0 40px;
+        margin-bottom: 40px;
+        border-bottom: 3px solid #0284c7;
+      }
+      .news-full-card {
+        background: #ffffff;
+        border-radius: 12px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        margin-bottom: 35px;
+        overflow: hidden;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+      .news-full-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      }
+      .news-img-holder {
+        height: 100%;
+        min-height: 240px;
+        background-size: cover;
+        background-position: center;
+      }
+      .news-body-holder {
+        padding: 25px 30px;
+      }
+      .news-badge {
+        display: inline-block;
+        padding: 5px 12px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 6px;
+        margin-bottom: 12px;
+      }
+      .badge-tax {
+        background: #fee2e2;
+        color: #b91c1c;
+      }
+      .badge-event {
+        background: #e0f2fe;
+        color: #0369a1;
+      }
+      .badge-edu {
+        background: #dcfce7;
+        color: #15803d;
+      }
+
+      .news-title {
+        font-size: 19px;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 12px;
+        line-height: 1.6;
+      }
+      .news-meta {
+        font-size: 13px;
+        color: #64748b;
+        margin-bottom: 15px;
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        border-bottom: 1px dashed #cbd5e1;
+        padding-bottom: 12px;
+      }
+      .news-meta span i {
+        margin-left: 6px;
+        color: #0284c7;
+      }
+      .news-full-text {
+        font-size: 14.5px;
+        line-height: 1.9;
+        color: #334155;
+        text-align: justify;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- اسکرول به بالا -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ================= شروع هدر سازمانی اتحادیه ================= -->
+    <header
+      id="header"
+      style="
+        background: #ffffff;
+        border-bottom: 2px solid #eef2f5;
+        padding: 15px 0;
+        direction: rtl;
+        text-align: right;
+      "
+    >
+      <div class="container">
+        <div
+          class="row"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          "
+        >
+          <!-- ۱. سمت راست: لوگو و عنوان سایت -->
+          <div
+            class="col-md-4 col-sm-12"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin-bottom: 10px;
+            "
+          >
+            <a
+              href="index.html"
+              style="text-decoration: none; display: flex; align-items: center"
+            >
+              <img
+                src="assets/images/union-logo.png"
+                alt="اتحادیه اصناف"
+                style="max-height: 55px; margin-left: 12px"
+              />
+              <div>
+                <h3
+                  style="
+                    margin: 0;
+                    font-size: 19px;
+                    font-weight: bold;
+                    color: #1f2937;
+                    line-height: 1.3;
+                  "
+                >
+                  اتاق و اتحادیه اصناف
+                </h3>
+                <span
+                  style="
+                    font-size: 12px;
+                    color: #6b7280;
+                    display: block;
+                    margin-top: 4px;
+                  "
+                  >سامانه اطلاع‌رسانی و امور نمایندگی‌ها</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <!-- ۲. بخش وسط: کادر تاریخ روز و آمار بازدید -->
+          <div
+            class="col-md-4 col-sm-12 text-center"
+            style="margin-bottom: 10px"
+          >
+            <div
+              style="
+                display: inline-flex;
+                align-items: center;
+                background: #f8fafc;
+                border: 1px solid #e2e8f0;
+                border-radius: 30px;
+                padding: 6px 18px;
+                font-size: 13px;
+                color: #475569;
+              "
+            >
+              <div style="margin-left: 15px">
+                <i
+                  class="fa fa-calendar"
+                  style="color: #3b82f6; margin-left: 6px"
+                ></i>
+                <span>امروز: 2 مهر 1405</span>
+              </div>
+              <span style="color: #cbd5e1">|</span>
+              <div style="margin-right: 15px">
+                <i
+                  class="fa fa-eye"
+                  style="color: #10b981; margin-left: 6px"
+                ></i>
+                <span>بازدید: ۲,۴۵۰</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ۳. سمت چپ: دکمه فهرست + جستجو + شبکه‌های اجتماعی -->
+          <div
+            class="col-md-4 col-sm-12"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              gap: 8px;
+              margin-bottom: 10px;
+            "
+          >
+            <!-- آیکون‌های اجتماعی -->
+            <div
+              class="social-icons"
+              style="display: flex; gap: 6px; margin-left: 10px"
+            >
+              <a
+                href="#"
+                title="اینستاگرام"
+                style="
+                  width: 34px;
+                  height: 34px;
+                  border-radius: 50%;
+                  background: #f1f5f9;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #e1306c;
+                  text-decoration: none;
+                "
+              >
+                <i class="fa fa-instagram" style="font-size: 16px"></i>
+              </a>
+              <a
+                href="#"
+                title="تلگرام"
+                style="
+                  width: 34px;
+                  height: 34px;
+                  border-radius: 50%;
+                  background: #f1f5f9;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #0088cc;
+                  text-decoration: none;
+                "
+              >
+                <i class="fa fa-paper-plane" style="font-size: 14px"></i>
+              </a>
+              <a
+                href="#"
+                title="پیام‌رسان رسمی"
+                style="
+                  width: 34px;
+                  height: 34px;
+                  border-radius: 50%;
+                  background: #f1f5f9;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #f59e0b;
+                  text-decoration: none;
+                "
+              >
+                <i class="fa fa-check-circle" style="font-size: 16px"></i>
+              </a>
+            </div>
+
+            <!-- بخش جستجوی تعاملی هدر (نسخه کاملاً تراز و فیکس شده) -->
+            <div
+              class="header-search-wrapper"
+              style="
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+              "
+            >
+              <!-- دکمه جستجو -->
+              <button
+                id="search-toggle-btn"
+                type="button"
+                title="جستجو در سایت"
+                style="
+                  background: #ffffff;
+                  border: 1px solid #e2e8f0;
+                  border-radius: 8px;
+                  width: 38px;
+                  height: 38px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer;
+                  color: #2bcdc1;
+                  padding: 0;
+                  margin: 0;
+                  outline: none;
+                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+                  transition: all 0.2s;
+                "
+              >
+                <i
+                  id="search-icon"
+                  class="fa fa-search"
+                  style="
+                    font-size: 15px;
+                    line-height: 0;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    transform: translateY(-1px);
+                  "
+                ></i>
+              </button>
+
+              <!-- باکس جستجوی بازشونده -->
+              <div
+                id="header-search-box"
+                style="
+                  display: none;
+                  position: absolute;
+                  left: 0;
+                  top: 46px;
+                  z-index: 1000;
+                  background: #ffffff;
+                  border: 1px solid #e2e8f0;
+                  border-radius: 8px;
+                  padding: 6px;
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+                  width: 260px;
+                  direction: rtl;
+                "
+              >
+                <form
+                  id="header-search-form"
+                  onsubmit="event.preventDefault()"
+                  style="margin: 0; display: flex; gap: 5px"
+                >
+                  <input
+                    type="text"
+                    id="header-search-input"
+                    class="form-control"
+                    placeholder="جستجو در سامانه اتحادیه..."
+                    style="
+                      height: 34px;
+                      font-size: 12px;
+                      border-radius: 6px;
+                      border: 1px solid #cbd5e1;
+                      box-shadow: none;
+                    "
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-sm"
+                    style="border-radius: 6px; padding: 0 12px; height: 34px"
+                  >
+                    <i class="fa fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- دکمه فهرست -->
+            <button
+              type="button"
+              class="btn btn-primary visible-xs visible-sm"
+              data-toggle="collapse"
+              data-target="#unionMainMenu"
+              style="
+                border-radius: 8px;
+                font-weight: bold;
+                padding: 7px 16px;
+                background: #2563eb;
+                border: none;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <i class="fa fa-bars" style="margin-left: 6px"></i> فهرست
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- نوار منوی بازشو -->
+      <div
+        id="unionMainMenu"
+        class="collapse custom-main-nav"
+        style="
+          background: #1e293b;
+          border-top: 1px solid #334155;
+          padding: 10px 0;
+        "
+      >
+        <div class="container">
+          <ul
+            class="nav navbar-nav"
+            style="
+              margin: 0;
+              padding: 0;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 8px;
+              list-style: none;
+              float: none;
+            "
+          >
+            <!-- بازگشت به صفحه اصلی -->
+            <li>
+              <a
+                href="index.html"
+                style="
+                  color: #cbd5e1;
+                  font-weight: 500;
+                  font-size: 13px;
+                  padding: 8px 14px;
+                  border-radius: 6px;
+                  text-decoration: none;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 6px;
+                  transition: all 0.2s;
+                "
+              >
+                <i class="fa fa-home" style="color: #2bcdc1"></i> صفحه اصلی
+              </a>
+            </li>
+            <!-- صفحه فعلی: اخبار و اطلاعیه‌ها -->
+            <li
+              style="background: rgba(43, 205, 193, 0.15); border-radius: 6px"
+            >
+              <a
+                href="news.html"
+                style="
+                  color: #2bcdc1;
+                  font-weight: 700;
+                  font-size: 13px;
+                  padding: 8px 14px;
+                  text-decoration: none;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 6px;
+                "
+              >
+                <i class="fa fa-newspaper-o" style="color: #2bcdc1"></i> اخبار و
+                اطلاعیه‌ها (صفحه فعلی)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- ================= پایان هدر سازمانی اتحادیه ================= -->
+
+    <!-- بخش معرفی صفحه (Hero) -->
+    <section class="news-page-hero">
+      <div class="container text-center">
+        <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 10px">
+          آرشیو کامل اخبار و اطلاعیه‌های رسمی
+        </h2>
+        <p
+          style="
+            font-size: 15px;
+            color: #94a3b8;
+            max-width: 650px;
+            margin: 0 auto;
+          "
+        >
+          کلیه ابلاغیه‌ها، بخشنامه‌های مالیاتی، مصوبات هیئت مدیره و تقویم
+          دوره‌های آموزشی در این صفحه به‌صورت کامل در دسترس است.
+        </p>
+      </div>
+    </section>
+
+    <!-- محتوای کامل خبرها -->
+    <main class="container" style="min-height: 500px">
+      <!-- خبر ۱: بخشنامه مالیاتی -->
+      <article class="news-full-card">
+        <div class="row" style="margin: 0">
+          <div class="col-md-4 col-sm-5" style="padding: 0">
+            <div
+              class="news-img-holder"
+              style="
+                background-image: url(&quot;assets/images/blog-img-1.jpg&quot;);
+              "
+            ></div>
+          </div>
+          <div class="col-md-8 col-sm-7 news-body-holder">
+            <span class="news-badge badge-tax">بخشنامه رسمی و مالیاتی</span>
+            <h3 class="news-title">
+              تمدید مهلت ارسال اظهارنامه‌های مالیاتی و ثبت پروانه‌های صنفی
+            </h3>
+            <div class="news-meta">
+              <span><i class="fa fa-calendar"></i> ۱۴ آبان ۱۴۰۳</span>
+              <span><i class="fa fa-user"></i> دبیرخانه مرکزی اتحادیه</span>
+              <span><i class="fa fa-eye"></i> ۳۴۰ بازدید</span>
+            </div>
+            <div class="news-full-text">
+              پیرو مصوبه جدید کارگروه مشترک سازمان امور مالیاتی و اتاق اصناف، به
+              اطلاع کلیه متصدیان واحدهای صنفی تحت پوشش می‌رساند که مهلت نهایی
+              ارسال فرم تبصره ماده ۱۰۰ و اظهارنامه‌های عملکرد مالیاتی سال گذشته،
+              تا پایان ماه جاری تمدید گردید. همچنین متقاضیانی که نسبت به تبدیل
+              مجوزهای کاغذی به شناسه یکتای الکترونیکی اقدام نکرده‌اند، ضروری است
+              از طریق درگاه ملی مجوزها مدارک خود را تکمیل نمایند تا از مسدود شدن
+              احتمالی درگاه‌های پرداخت پیشگیری شود.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- خبر ۲: هم‌اندیشی روسای شعب -->
+      <article class="news-full-card">
+        <div class="row" style="margin: 0">
+          <div class="col-md-4 col-sm-5" style="padding: 0">
+            <div
+              class="news-img-holder"
+              style="
+                background-image: url(&quot;assets/images/blog-img-2.jpg&quot;);
+              "
+            ></div>
+          </div>
+          <div class="col-md-8 col-sm-7 news-body-holder">
+            <span class="news-badge badge-event">رویداد و همایش</span>
+            <h3 class="news-title">
+              برگزاری نشست هم‌اندیشی روسای شعب با هیئت مدیره مرکزی
+            </h3>
+            <div class="news-meta">
+              <span><i class="fa fa-calendar"></i> ۱۲ آبان ۱۴۰۳</span>
+              <span><i class="fa fa-user"></i> واحد روابط عمومی</span>
+              <span><i class="fa fa-eye"></i> ۵۱۸ بازدید</span>
+            </div>
+            <div class="news-full-text">
+              سومین نشست فصلی بررسی چالش‌های میدانی اصناف با حضور اعضای هیئت
+              مدیره، بازرسان و روسای شعب منطقه‌ای برگزار شد. در این نشست، مباحث
+              مرتبط با یکسان‌سازی نرخ‌گذاری خدمات صنفی، ارائه تسهیلات کم‌بهره به
+              اعضای فعال، پیگیری تسهیلات بیمه تکمیلی پرسنل و مکانیزاسیون
+              سامانه‌های پاسخگویی به شکایات مردمی مورد ارزیابی قرار گرفت و
+              کارگروه‌های تخصصی جهت اجرای مصوبات تشکیل شد.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- خبر ۳: دوره‌های مهارتی و ایمنی -->
+      <article class="news-full-card">
+        <div class="row" style="margin: 0">
+          <div class="col-md-4 col-sm-5" style="padding: 0">
+            <div
+              class="news-img-holder"
+              style="
+                background-image: url(&quot;assets/images/blog-img-3.jpg&quot;);
+              "
+            ></div>
+          </div>
+          <div class="col-md-8 col-sm-7 news-body-holder">
+            <span class="news-badge badge-edu">آموزش و ارتقای استاندارد</span>
+            <h3 class="news-title">
+              آغاز دوره‌های تخصصی مهارت‌آموزی و ارتقای ایمنی کارگاه‌ها
+            </h3>
+            <div class="news-meta">
+              <span><i class="fa fa-calendar"></i> ۰۸ آبان ۱۴۰۳</span>
+              <span><i class="fa fa-user"></i> کمیته آموزش و پژوهش</span>
+              <span><i class="fa fa-eye"></i> ۸۹۲ بازدید</span>
+            </div>
+            <div class="news-full-text">
+              کمیته آموزش اتحادیه از شروع ثبت‌نام دوره‌های جامع ایمنی صنعتی،
+              اطفای حریق، مشتری‌مداری و حسابداری مقدماتی ویژه کارفرمایان و
+              کارکنان واحدهای صنفی خبر داد. حضور در این دوره‌ها دارای امتیاز
+              بازآموزی در تمدید پروانه‌های کسب بوده و گواهینامه معتبر فنی و
+              حرفه‌ای به شرکت‌کنندگان اعطا می‌شود. ثبت‌نام به صورت حضوری در
+              دبیرخانه و یا از طریق تماس تلفنی با واحد آموزش امکان‌پذیر است.
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- فوتر هماهنگ با صفحه اصلی -->
+    <footer
+      id="footer"
+      style="
+        background: #0f172a;
+        color: #94a3b8;
+        padding: 45px 0 25px;
+        margin-top: 60px;
+      "
+    >
+      <div class="container text-center">
+        <p style="margin: 0; font-size: 14px">
+          تمامی حقوق مادی و معنوی این پرتال متعلق به
+          <strong>اتحادیه و اصناف</strong> می‌باشد.
+        </p>
+      </div>
+    </footer>
+
+    <!-- اسکریپت‌ها -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

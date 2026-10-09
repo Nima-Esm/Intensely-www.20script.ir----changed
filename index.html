@@ -40,6 +40,10 @@
       rel="stylesheet"
     />
 
+    <!-- فونت استاندارد وزیر (Vazirmatn) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/misc/Farsi-Digits/Vazirmatn-FD-font-face.css">
+
+
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet" />
 
@@ -152,7 +156,7 @@
                   class="fa fa-calendar"
                   style="color: #3b82f6; margin-left: 6px"
                 ></i>
-                <span>امروز: ۱۴ آبان ۱۴۰۳</span>
+                <span>امروز: 2 مهر 1405</span>
               </div>
               <span style="color: #cbd5e1">|</span>
               <div style="margin-right: 15px">
@@ -258,7 +262,7 @@
                   align-items: center;
                   justify-content: center;
                   cursor: pointer;
-                  color: #0284c7;
+                  color: #2bcdc1;
                   padding: 0;
                   margin: 0;
                   outline: none;
@@ -330,7 +334,7 @@
             <!-- دکمه فهرست -->
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn btn-primary visible-xs visible-sm"
               data-toggle="collapse"
               data-target="#unionMainMenu"
               style="
@@ -350,54 +354,22 @@
       </div>
 
       <!-- نوار منوی بازشو -->
-      <div
-        id="unionMainMenu"
-        class="collapse"
-        style="
-          background: #1e293b;
-          margin-top: 15px;
-          border-top: 1px solid #334155;
-        "
-      >
-        <div class="container" style="direction: rtl">
-          <ul
-            class="nav navbar-nav"
-            style="float: right; margin: 0; padding: 10px 0"
-          >
-            <li>
-              <a
-                href="#"
-                style="color: #fff; padding: 10px 15px; font-weight: bold"
-                >صفحه اصلی</a
-              >
-            </li>
-            <li>
-              <a
-                href="#representatives-section"
-                style="color: #cbd5e1; padding: 10px 15px"
-                >نمایندگی‌ها و اصناف</a
-              >
-            </li>
-            <li>
-              <a href="#latest-news" style="color: #cbd5e1; padding: 10px 15px"
-                >اخبار و رویدادها</a
-              >
-            </li>
-            <li>
-              <a
-                href="#announcements"
-                style="color: #cbd5e1; padding: 10px 15px"
-                >بخشنامه‌ها و اطلاعیه‌ها</a
-              >
-            </li>
-            <li>
-              <a href="#footer" style="color: #cbd5e1; padding: 10px 15px"
-                >راه‌های ارتباطی</a
-              >
-            </li>
-          </ul>
-        </div>
+      <!-- نوار منوی اصلی -->
+<div id="unionMainMenu" class="collapse custom-main-nav" style="background: #1e293b; border-top: 1px solid #334155;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="nav navbar-nav" style="float: right; margin: 0; display: flex; flex-wrap: wrap; gap: 4px; padding: 6px 0;">
+          <li><a href="#" style="color: #f8fafc; font-size: 13px; font-weight: 500; padding: 10px 14px; border-radius: 6px; transition: all 0.2s;"><i class="fa fa-home" style="margin-left: 6px; color: #60a5fa;"></i>صفحه اصلی</a></li>
+          <li><a href="#representatives-section" style="color: #cbd5e1; font-size: 13px; font-weight: 500; padding: 10px 14px; border-radius: 6px; transition: all 0.2s;"><i class="fa fa-users" style="margin-left: 6px; color: #60a5fa;"></i>نمایندگی‌ها و اصناف</a></li>
+          <li><a href="news.html" style="color: #cbd5e1; font-size: 13px; font-weight: 500; padding: 10px 14px; border-radius: 6px; transition: all 0.2s;"><i class="fa fa-newspaper-o" style="margin-left: 6px; color: #60a5fa;"></i>اخبار و رویدادها</a></li>
+          <li><a href="#footer" style="color: #cbd5e1; font-size: 13px; font-weight: 500; padding: 10px 14px; border-radius: 6px; transition: all 0.2s;"><i class="fa fa-phone" style="margin-left: 6px; color: #60a5fa;"></i>راه‌های ارتباطی</a></li>
+        </ul>
       </div>
+    </div>
+  </div>
+</div>
+
     </header>
     <!-- ================= پایان هدر سازمانی اتحادیه ================= -->
 
@@ -1981,412 +1953,7 @@
             </div>
           </div>
         </div>
-
-        <!-- کارت‌های اخبار (۳ ستونه در دسکتاپ) -->
-        <div class="row">
-          <!-- خبر ۱ -->
-          <div class="col-md-4 col-sm-6" style="margin-bottom: 30px">
-            <article
-              style="
-                background: #ffffff;
-                border-radius: 12px;
-                overflow: hidden;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-                border: 1px solid #e2e8f0;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.3s,
-                  box-shadow 0.3s;
-              "
-            >
-              <div style="position: relative; overflow: hidden; height: 200px">
-                <img
-                  src="assets/images/blog-img-1.jpg"
-                  alt="خبر ۱"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    transition: transform 0.4s;
-                  "
-                />
-                <span
-                  style="
-                    position: absolute;
-                    top: 12px;
-                    right: 12px;
-                    background: rgba(37, 99, 235, 0.9);
-                    color: #fff;
-                    font-size: 11px;
-                    padding: 4px 10px;
-                    border-radius: 20px;
-                    font-weight: bold;
-                  "
-                  >بخشنامه رسمی</span
-                >
-              </div>
-              <div
-                style="
-                  padding: 20px;
-                  flex-grow: 1;
-                  display: flex;
-                  flex-direction: column;
-                  text-align: right;
-                "
-              >
-                <div
-                  style="
-                    font-size: 12px;
-                    color: #64748b;
-                    margin-bottom: 10px;
-                    display: flex;
-                    gap: 15px;
-                  "
-                >
-                  <span
-                    ><i
-                      class="fa fa-calendar-o"
-                      style="margin-left: 5px; color: #2563eb"
-                    ></i>
-                    ۱۴ آبان ۱۴۰۳</span
-                  >
-                  <span
-                    ><i
-                      class="fa fa-eye"
-                      style="margin-left: 5px; color: #2563eb"
-                    ></i>
-                    ۳۴۰ بازدید</span
-                  >
-                </div>
-                <h3
-                  style="
-                    font-size: 16px;
-                    font-weight: bold;
-                    line-height: 1.6;
-                    margin-top: 0;
-                    margin-bottom: 10px;
-                  "
-                >
-                  <a href="#" style="color: #1e293b; text-decoration: none"
-                    >تمدید مهلت ارسال اظهارنامه‌های مالیاتی و ثبت پروانه‌های
-                    صنفی</a
-                  >
-                </h3>
-                <p
-                  style="
-                    font-size: 13px;
-                    color: #64748b;
-                    line-height: 1.7;
-                    margin-bottom: 20px;
-                    flex-grow: 1;
-                  "
-                >
-                  کلیه متصدیان واحدهای صنفی تحت پوشش اتحادیه موظفند تا پایان ماه
-                  جاری نسبت به تکمیل مستندات خود در سامانه اقدام نمایند.
-                </p>
-                <div
-                  style="
-                    border-top: 1px solid #f1f5f9;
-                    padding-top: 15px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                  "
-                >
-                  <span style="font-size: 12px; color: #94a3b8"
-                    ><i class="fa fa-user" style="margin-left: 5px"></i>
-                    دبیرخانه اتحادیه</span
-                  >
-                  <a
-                    href="#"
-                    style="
-                      color: #2563eb;
-                      font-weight: bold;
-                      font-size: 13px;
-                      text-decoration: none;
-                    "
-                  >
-                    ادامه مطلب
-                    <i
-                      class="fa fa-arrow-left"
-                      style="font-size: 11px; margin-right: 4px"
-                    ></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- خبر ۲ -->
-          <div class="col-md-4 col-sm-6" style="margin-bottom: 30px">
-            <article
-              style="
-                background: #ffffff;
-                border-radius: 12px;
-                overflow: hidden;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-                border: 1px solid #e2e8f0;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.3s,
-                  box-shadow 0.3s;
-              "
-            >
-              <div style="position: relative; overflow: hidden; height: 200px">
-                <img
-                  src="assets/images/blog-img-2.jpg"
-                  alt="خبر ۲"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    transition: transform 0.4s;
-                  "
-                />
-                <span
-                  style="
-                    position: absolute;
-                    top: 12px;
-                    right: 12px;
-                    background: rgba(16, 185, 129, 0.9);
-                    color: #fff;
-                    font-size: 11px;
-                    padding: 4px 10px;
-                    border-radius: 20px;
-                    font-weight: bold;
-                  "
-                  >رویداد و همایش</span
-                >
-              </div>
-              <div
-                style="
-                  padding: 20px;
-                  flex-grow: 1;
-                  display: flex;
-                  flex-direction: column;
-                  text-align: right;
-                "
-              >
-                <div
-                  style="
-                    font-size: 12px;
-                    color: #64748b;
-                    margin-bottom: 10px;
-                    display: flex;
-                    gap: 15px;
-                  "
-                >
-                  <span
-                    ><i
-                      class="fa fa-calendar-o"
-                      style="margin-left: 5px; color: #10b981"
-                    ></i>
-                    ۱۲ آبان ۱۴۰۳</span
-                  >
-                  <span
-                    ><i
-                      class="fa fa-eye"
-                      style="margin-left: 5px; color: #10b981"
-                    ></i>
-                    ۵۱۸ بازدید</span
-                  >
-                </div>
-                <h3
-                  style="
-                    font-size: 16px;
-                    font-weight: bold;
-                    line-height: 1.6;
-                    margin-top: 0;
-                    margin-bottom: 10px;
-                  "
-                >
-                  <a href="#" style="color: #1e293b; text-decoration: none"
-                    >برگزاری نشست هم‌اندیشی روسای شعب با هیئت مدیره مرکزی</a
-                  >
-                </h3>
-                <p
-                  style="
-                    font-size: 13px;
-                    color: #64748b;
-                    line-height: 1.7;
-                    margin-bottom: 20px;
-                    flex-grow: 1;
-                  "
-                >
-                  بررسی چالش‌های صنفی، ساماندهی نرخ‌گذاری خدمات و ارتقای سطح
-                  رفاهی اعضای شاغل در اصناف در دستور کار قرار گرفت.
-                </p>
-                <div
-                  style="
-                    border-top: 1px solid #f1f5f9;
-                    padding-top: 15px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                  "
-                >
-                  <span style="font-size: 12px; color: #94a3b8"
-                    ><i class="fa fa-user" style="margin-left: 5px"></i> روابط
-                    عمومی</span
-                  >
-                  <a
-                    href="#"
-                    style="
-                      color: #2563eb;
-                      font-weight: bold;
-                      font-size: 13px;
-                      text-decoration: none;
-                    "
-                  >
-                    ادامه مطلب
-                    <i
-                      class="fa fa-arrow-left"
-                      style="font-size: 11px; margin-right: 4px"
-                    ></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- خبر ۳ -->
-          <div class="col-md-4 col-sm-6" style="margin-bottom: 30px">
-            <article
-              style="
-                background: #ffffff;
-                border-radius: 12px;
-                overflow: hidden;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-                border: 1px solid #e2e8f0;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.3s,
-                  box-shadow 0.3s;
-              "
-            >
-              <div style="position: relative; overflow: hidden; height: 200px">
-                <img
-                  src="assets/images/blog-img-3.jpg"
-                  alt="خبر ۳"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    transition: transform 0.4s;
-                  "
-                />
-                <span
-                  style="
-                    position: absolute;
-                    top: 12px;
-                    right: 12px;
-                    background: rgba(245, 158, 11, 0.9);
-                    color: #fff;
-                    font-size: 11px;
-                    padding: 4px 10px;
-                    border-radius: 20px;
-                    font-weight: bold;
-                  "
-                  >آموزش و پژوهش</span
-                >
-              </div>
-              <div
-                style="
-                  padding: 20px;
-                  flex-grow: 1;
-                  display: flex;
-                  flex-direction: column;
-                  text-align: right;
-                "
-              >
-                <div
-                  style="
-                    font-size: 12px;
-                    color: #64748b;
-                    margin-bottom: 10px;
-                    display: flex;
-                    gap: 15px;
-                  "
-                >
-                  <span
-                    ><i
-                      class="fa fa-calendar-o"
-                      style="margin-left: 5px; color: #f59e0b"
-                    ></i>
-                    ۰۸ آبان ۱۴۰۳</span
-                  >
-                  <span
-                    ><i
-                      class="fa fa-eye"
-                      style="margin-left: 5px; color: #f59e0b"
-                    ></i>
-                    ۸۹۲ بازدید</span
-                  >
-                </div>
-                <h3
-                  style="
-                    font-size: 16px;
-                    font-weight: bold;
-                    line-height: 1.6;
-                    margin-top: 0;
-                    margin-bottom: 10px;
-                  "
-                >
-                  <a href="#" style="color: #1e293b; text-decoration: none"
-                    >آغاز دوره‌های تخصصی مهارت‌آموزی و ارتقای ایمنی کارگاه‌ها</a
-                  >
-                </h3>
-                <p
-                  style="
-                    font-size: 13px;
-                    color: #64748b;
-                    line-height: 1.7;
-                    margin-bottom: 20px;
-                    flex-grow: 1;
-                  "
-                >
-                  ثبت‌نام دوره جدید آموزش‌های فنی و استانداردهای شغلی ویژه پرسنل
-                  و کارفرمایان اصناف آغاز گردید.
-                </p>
-                <div
-                  style="
-                    border-top: 1px solid #f1f5f9;
-                    padding-top: 15px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                  "
-                >
-                  <span style="font-size: 12px; color: #94a3b8"
-                    ><i class="fa fa-user" style="margin-left: 5px"></i> واحد
-                    آموزش</span
-                  >
-                  <a
-                    href="#"
-                    style="
-                      color: #2563eb;
-                      font-weight: bold;
-                      font-size: 13px;
-                      text-decoration: none;
-                    "
-                  >
-                    ادامه مطلب
-                    <i
-                      class="fa fa-arrow-left"
-                      style="font-size: 11px; margin-right: 4px"
-                    ></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
+        <a href="news.html" class="btn btn-primary">مشاهده اخبار</a>
       </div>
     </section>
     <!-- ================= پایان بخش آخرین اخبار ================= -->
@@ -2766,3 +2333,4 @@
   </body>
   <link rel="canonical" href="http://www.bistscript.ir" />
 </html>
+

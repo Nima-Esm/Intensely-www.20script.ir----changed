@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="page-title">مشاهده خبر | پورتال اصناف</title>
+
+    <!-- فونت استاندارد وزیر (Vazirmatn FD) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/misc/Farsi-Digits/Vazirmatn-FD-font-face.css"
+    />
+
+    <!-- بارگذاری فونت و استایل‌ها -->
+    <link href="font.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="assets/css/theme-color/bridge-theme.css" rel="stylesheet" />
+
+    
+  </head>
+  <body class="news-page-body">
+    <!-- ================= شروع هدر سازمانی اتحادیه ================= -->
+    <header id="header" class="union-main-header">
+      <div class="container">
+        <div class="row union-header-row">
+          <!-- ۱. سمت راست: لوگو و عنوان سایت -->
+          <div class="col-md-4 col-sm-12 union-header-brand-col">
+            <a href="index.html" class="union-header-brand-link">
+              <img
+                src="assets/images/union-logo.png"
+                alt="اتحادیه اصناف"
+                class="union-header-logo"
+              />
+              <div>
+                <h3 class="union-header-title">اتاق و اتحادیه اصناف</h3>
+                <span class="union-header-subtitle"
+                  >سامانه اطلاع‌رسانی و امور نمایندگی‌ها</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <!-- ۲. بخش وسط: کادر تاریخ روز و آمار بازدید -->
+          <div class="col-md-4 col-sm-12 text-center union-header-stat-col">
+            <div class="union-header-stat-pill">
+              <div class="union-stat-date">
+                <i class="fa fa-calendar"></i>
+                <span>امروز: ۲ مهر ۱۴۰۵</span>
+              </div>
+              <span class="union-stat-divider">|</span>
+              <div class="union-stat-views">
+                <i class="fa fa-eye"></i>
+                <span>بازدید: ۲,۴۵۰</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ۳. سمت چپ: دکمه فهرست + جستجو + شبکه‌های اجتماعی -->
+          <div class="col-md-4 col-sm-12 union-header-actions-col">
+            <!-- آیکون‌های اجتماعی -->
+            <div class="union-social-icons">
+              <a
+                href="#"
+                title="اینستاگرام"
+                class="union-social-btn union-social-instagram"
+              >
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                title="تلگرام"
+                class="union-social-btn union-social-telegram"
+              >
+                <i class="fa fa-paper-plane"></i>
+              </a>
+              <a
+                href="#"
+                title="پیام‌رسان رسمی"
+                class="union-social-btn union-social-official"
+              >
+                <i class="fa fa-check-circle"></i>
+              </a>
+            </div>
+
+            <!-- بخش جستجوی تعاملی هدر -->
+            <div class="header-search-wrapper">
+              <button
+                id="search-toggle-btn"
+                type="button"
+                title="جستجو در سایت"
+                class="header-search-toggle-btn"
+              >
+                <i id="search-icon" class="fa fa-search header-search-icon"></i>
+              </button>
+
+              <!-- باکس جستجوی بازشونده -->
+              <div id="header-search-box" class="header-search-dropdown">
+                <form
+                  id="header-search-form"
+                  onsubmit="event.preventDefault()"
+                  class="header-search-form"
+                >
+                  <input
+                    type="text"
+                    id="header-search-input"
+                    class="form-control header-search-input"
+                    placeholder="جستجو در سامانه اتحادیه..."
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-sm header-search-submit-btn"
+                  >
+                    <i class="fa fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- دکمه فهرست موبایل -->
+            <button
+              type="button"
+              class="btn btn-primary visible-xs visible-sm union-menu-toggle-btn"
+              data-toggle="collapse"
+              data-target="#unionMainMenu"
+            >
+              <i class="fa fa-bars"></i> فهرست
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- نوار منوی بازشو -->
+      <div
+        id="unionMainMenu"
+        class="collapse custom-main-nav union-main-nav-collapse"
+      >
+        <div class="container">
+          <ul class="nav navbar-nav union-main-nav-list">
+            <!-- بازگشت به صفحه اصلی -->
+            <li>
+              <a href="index.html" class="union-nav-link">
+                <i class="fa fa-home"></i> صفحه اصلی
+              </a>
+            </li>
+            <!-- صفحه فعلی: اخبار و اطلاعیه‌ها -->
+            <li class="union-nav-item-active">
+              <a href="news.html" class="union-nav-link-active">
+                <i class="fa fa-newspaper-o"></i> جزئیات خبر (صفحه فعلی)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- ================= پایان هدر سازمانی اتحادیه ================= -->
+
+    <!-- محتوای تک‌خبر -->
+    <main class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <article class="single-news-wrap">
+            <div class="single-news-tag-box">
+              <span id="single-tag" class="news-badge">دسته‌بندی</span>
+            </div>
+
+            <h1 id="single-title" class="single-news-title">
+              عنوان خبر در حال بارگذاری...
+            </h1>
+
+            <div class="news-card-meta single-news-meta-box">
+              <span
+                ><i class="fa fa-calendar-o"></i>
+                <span id="single-date">-</span></span
+              >
+              <span
+                ><i class="fa fa-eye"></i>
+                <span id="single-views">-</span></span
+              >
+              <span><i class="fa fa-user"></i> دبیرخانه اتحادیه</span>
+            </div>
+
+            <img
+              id="single-img"
+              class="single-news-cover"
+              src="assets/images/blog-img-1.jpg"
+              alt="تصویر خبر"
+            />
+
+            <div id="single-body" class="single-news-content">
+              <!-- متن توسط جاوااسکریپت پر می‌شود -->
+            </div>
+
+            <div class="single-news-footer-nav">
+              <a href="index.html#latest-news" class="news-read-more">
+                <i class="fa fa-arrow-right"></i> بازگشت به صفحه اصلی
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const newsData = {
+        1: {
+          title: "دستورالعمل جدید ساماندهی مالیاتی و صدور پروانه‌های کسب",
+          tag: "بخشنامه رسمی",
+          date: "۲۴ مهر ۱۴۰۵",
+          views: "۱,۲۴۰ بازدید",
+          image: "assets/images/blog-img-1.jpg",
+          content: `
+          <p>بر اساس ابلاغیه جدید دبیرخانه هیأت عالی نظارت بر سازمان‌های صنفی کشور و با هماهنگی سازمان امور مالیاتی، ضوابط ویژه و تسهیل‌شده‌ای جهت شفاف‌سازی و صدور پروانه‌های کسب الکترونیکی تدوین و به تمامی اتحادیه‌ها ابلاغ شد.</p>
+          <p>هدف از این مصوبه، تسریع در فرآیند استعلام‌های ماده ۱۸۶ قانون مالیات‌های مستقیم و رفع موانع اداری پیش‌روی فعالان صنفی است. متقاضیان محترم می‌توانند با ورود به درگاه ملی مجوزها مدارک خود را تکمیل نموده و بدون نیاز به مراجعه حضوری، کد رهگیری مالیاتی خود را به پروانه متصل کنند.</p>
+          <p>همچنین کارگاه‌های اطلاع‌رسانی ویژه روسای اتحادیه‌ها جهت تسریع پاسخگویی به اعضا از ابتدای هفته آینده آغاز خواهد شد.</p>
+        `,
+        },
+        2: {
+          title: "برگزاری همایش سالانه اصناف با محوریت تحول دیجیتال",
+          tag: "رویداد و همایش",
+          date: "۲۰ مهر ۱۴۰۵",
+          views: "۸۹۰ بازدید",
+          image: "assets/images/blog-img-2.jpg",
+          content: `
+          <p>همایش بزرگ سالانه اصناف و بازرگانان با تمرکز بر ضرورت دیجیتالی‌شدن خدمات واحدهای صنفی، هفته آینده در مرکز همایش‌های بین‌المللی برگزار می‌گردد.</p>
+          <p>در این نشست تخصصی، راهکارهای نوین پذیرش سیستم‌های پرداخت یکپارچه، راهکارهای بازاریابی دیجیتال برای کسب‌وکارهای سنتی و چگونگی نظارت هوشمند بر بازار مورد نقد و بررسی اساتید و مدیران ارشد قرار خواهد گرفت.</p>
+          <p>کلیه اعضای اتحادیه‌ها و مدیران واحدهای صنفی دارای پروانه معتبر می‌توانند جهت ثبت‌نام و حضور در پانل‌های تخصصی از طریق پورتال اقدام نمایند.</p>
+        `,
+        },
+        3: {
+          title: "آغاز ثبت‌نام دوره‌های تخصصی استانداردهای ایمنی و بهداشت",
+          tag: "آموزش و پژوهش",
+          date: "۱۵ مهر ۱۴۰۵",
+          views: "۶۵۰ بازدید",
+          image: "assets/images/blog-img-3.jpg",
+          content: `
+          <p>واحد آموزش اتحادیه از آغاز ثبت‌نام دوره جامع استانداردهای ایمنی، بهداشت حرفه‌ای و اطفای حریق ویژه کارفرمایان و متصدیان واحدهای صنفی خبر داد.</p>
+          <p>گذراندن این دوره برای دریافت و تمدید پروانه‌های کسب در رسته‌های با ریسک بالا الزامی بوده و در پایان دوره به شرکت‌کنندگان، گواهی معتبر و مورد تأیید وزارت کار و سازمان آتش‌نشانی اعطا خواهد شد.</p>
+          <p>متقاضیان محترم می‌توانند تا پایان ماه جاری با همراه داشتن مدارک شناسایی به واحد آموزش مراجعه یا به صورت اینترنتی نام‌نویسی نمایند.</p>
+        `,
+        },
+      };
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const newsId = urlParams.get("id") || "1";
+      const news = newsData[newsId] || newsData["1"];
+
+      document.getElementById("page-title").innerText =
+        news.title + " | پورتال اصناف";
+      document.getElementById("single-title").innerText = news.title;
+      document.getElementById("single-tag").innerText = news.tag;
+      document.getElementById("single-date").innerText = news.date;
+      document.getElementById("single-views").innerText = news.views;
+      document.getElementById("single-img").src = news.image;
+      document.getElementById("single-body").innerHTML = news.content;
+    </script>
+
+    <!-- اسکریپت‌ها -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

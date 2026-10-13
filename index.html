@@ -1887,75 +1887,118 @@
     </section>
     <!-- ================= پایان بخش آمار ================= -->
 
-    <!-- ================= بخش آخرین اخبار و اطلاعیه‌ها ================= -->
-    <section
-      id="latest-news"
-      style="background-color: #f8fafc; padding: 70px 0; direction: rtl"
-    >
-      <div class="container">
-        <!-- عنوان بخش -->
-        <div class="row">
-          <div class="col-md-12">
-            <div
-              style="
-                text-align: right;
-                margin-bottom: 40px;
-                border-bottom: 2px solid #e2e8f0;
-                padding-bottom: 15px;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                flex-wrap: wrap;
-                gap: 10px;
-              "
-            >
-              <div>
-                <span
-                  style="
-                    color: #2563eb;
-                    font-weight: bold;
-                    font-size: 13px;
-                    letter-spacing: 1px;
-                    display: block;
-                    margin-bottom: 5px;
-                  "
-                  >پورتال اطلاع‌رسانی</span
-                >
-                <h2
-                  style="
-                    font-size: 24px;
-                    font-weight: 800;
-                    color: #0f172a;
-                    margin: 0;
-                    position: relative;
-                  "
-                >
-                  آخرین اخبار و اطلاعیه‌های اصناف
-                </h2>
+  <!-- =========================
+       بخش آخرین اخبار و اطلاعیه‌ها
+       ========================= -->
+  <section id="latest-news" class="news-section">
+    <div class="container">
+      
+      <!-- عنوان بخش و لینک آرشیو -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="news-section-header">
+            <div>
+              <div class="news-badge">
+                <i class="fa fa-newspaper-o"></i> رویدادها و اطلاعیه‌ها
               </div>
-              <a
-                href="#"
-                class="btn btn-default"
-                style="
-                  border-radius: 8px;
-                  font-size: 13px;
-                  font-weight: bold;
-                  border: 1px solid #cbd5e1;
-                  background: #ffffff;
-                  color: #334155;
-                  padding: 7px 18px;
-                  transition: all 0.3s;
-                "
-              >
-                مشاهده آرشیو اخبار
-                <i class="fa fa-angle-left" style="margin-right: 5px"></i>
+              <h2 class="news-section-title">آخرین اخبار و اطلاعیه‌های اصناف</h2>
+            </div>
+            <div>
+              <a href="news.html" class="news-archive-link">
+                مشاهده آرشیو اخبار <i class="fa fa-arrow-left"></i>
               </a>
             </div>
           </div>
         </div>
-        <a href="news.html" class="btn btn-primary">مشاهده اخبار</a>
       </div>
-    </section>
+
+      <!-- لیست کارت‌های خبر -->
+      <div class="row">
+
+        <!-- خبر اول -->
+        <div class="col-md-4 col-sm-6">
+          <article class="news-card">
+            <div class="news-card-img">
+              <img src="assets/images/blog-img-1.jpg" alt="دستورالعمل ساماندهی مالیاتی">
+              <span class="news-card-tag">بخشنامه رسمی</span>
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-meta">
+                <span><i class="fa fa-calendar-o"></i> ۲۴ مهر ۱۴۰۵</span>
+                <span><i class="fa fa-eye"></i> ۱,۲۴۰ بازدید</span>
+              </div>
+              <h3 class="news-card-title">
+                <a href="news-single.html?id=1">دستورالعمل جدید ساماندهی مالیاتی و صدور پروانه‌های کسب</a>
+              </h3>
+              <p class="news-card-desc">
+                بر اساس آخرین مصوبه کارگروه مشترک اتاق اصناف، شرایط تسهیل‌شده برای تمدید و صدور پروانه‌های کسب الکترونیک اعلام شد.
+              </p>
+              <div class="news-card-footer">
+                <a href="news-single.html?id=1" class="news-read-more">
+                  مطالعه بیشتر <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- خبر دوم -->
+        <div class="col-md-4 col-sm-6">
+          <article class="news-card">
+            <div class="news-card-img">
+              <img src="assets/images/blog-img-2.jpg" alt="همایش سالانه اصناف">
+              <span class="news-card-tag" style="background-color: #3b82f6;">رویداد و همایش</span>
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-meta">
+                <span><i class="fa fa-calendar-o"></i> ۲۰ مهر ۱۴۰۵</span>
+                <span><i class="fa fa-eye"></i> ۸۹۰ بازدید</span>
+              </div>
+              <h3 class="news-card-title">
+                <a href="news-single.html?id=2">برگزاری همایش سالانه اصناف با محوریت تحول دیجیتال</a>
+              </h3>
+              <p class="news-card-desc">
+                گردهمایی بزرگ رؤسای اتحادیه‌ها و فعالان صنفی جهت بررسی راهکارهای نوین فروش آنلاین و سامانه‌های هوشمند نظارتی.
+              </p>
+              <div class="news-card-footer">
+                <a href="news-single.html?id=2" class="news-read-more">
+                  مطالعه بیشتر <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- خبر سوم -->
+        <div class="col-md-4 col-sm-6">
+          <article class="news-card">
+            <div class="news-card-img">
+              <img src="assets/images/blog-img-3.jpg" alt="دوره‌های تخصصی ایمنی و بهداشت">
+              <span class="news-card-tag" style="background-color: #10b981;">آموزش و پژوهش</span>
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-meta">
+                <span><i class="fa fa-calendar-o"></i> ۱۵ مهر ۱۴۰۵</span>
+                <span><i class="fa fa-eye"></i> ۶۵۰ بازدید</span>
+              </div>
+              <h3 class="news-card-title">
+                <a href="news-single.html?id=3">آغاز ثبت‌نام دوره‌های تخصصی استانداردهای ایمنی و بهداشت</a>
+              </h3>
+              <p class="news-card-desc">
+                دبیرخانه اتحادیه تقویم آموزشی فصل پاییز ویژه متقاضیان دریافت گواهی صلاحیت حرفه‌ای را به صورت رسمی منتشر کرد.
+              </p>
+              <div class="news-card-footer">
+                <a href="news-single.html?id=3" class="news-read-more">
+                  مطالعه بیشتر <i class="fa fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
     <!-- ================= پایان بخش آخرین اخبار ================= -->
 
     <!-- ================= فوتر پورتال اتحادیه ================= -->

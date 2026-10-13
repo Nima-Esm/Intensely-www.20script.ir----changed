@@ -29,261 +29,77 @@
 <body>
 
     <!-- ================= شروع هدر سازمانی اتحادیه ================= -->
-    <header
-      id="header"
-      style="
-        background: #ffffff;
-        border-bottom: 2px solid #eef2f5;
-        padding: 15px 0;
-        direction: rtl;
-        text-align: right;
-      "
-    >
+    <header id="header" class="org-header">
       <div class="container">
-        <div
-          class="row"
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-          "
-        >
+        <div class="row org-header-row">
           <!-- ۱. سمت راست: لوگو و عنوان سایت -->
-          <div
-            class="col-md-4 col-sm-12"
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-              margin-bottom: 10px;
-            "
-          >
-            <a
-              href="index.html"
-              style="text-decoration: none; display: flex; align-items: center"
-            >
-              <img
-                src="assets/images/union-logo.png"
-                alt="اتحادیه اصناف"
-                style="max-height: 55px; margin-left: 12px"
-              />
-              <div>
-                <h3
-                  style="
-                    margin: 0;
-                    font-size: 19px;
-                    font-weight: bold;
-                    color: #1f2937;
-                    line-height: 1.3;
-                  "
-                >
-                  اتاق و اتحادیه اصناف
-                </h3>
-                <span
-                  style="
-                    font-size: 12px;
-                    color: #6b7280;
-                    display: block;
-                    margin-top: 4px;
-                  "
-                  >سامانه اطلاع‌رسانی و امور نمایندگی‌ها</span
-                >
-              </div>
-            </a>
+          <div class="col-md-4 col-sm-12 org-header-brand-col">
+            <img
+              src="assets/images/union-logo.png"
+              alt="اتحادیه اصناف"
+              class="org-header-logo"
+            />
+            <div>
+              <h3 class="org-header-title">
+                اتاق و اتحادیه اصناف
+              </h3>
+              <span class="org-header-subtitle"
+                >سامانه اطلاع‌رسانی و امور نمایندگی‌ها</span
+              >
+            </div>
           </div>
 
           <!-- ۲. بخش وسط: کادر تاریخ روز و آمار بازدید -->
-          <div
-            class="col-md-4 col-sm-12 text-center"
-            style="margin-bottom: 10px"
-          >
-            <div
-              style="
-                display: inline-flex;
-                align-items: center;
-                background: #f8fafc;
-                border: 1px solid #e2e8f0;
-                border-radius: 30px;
-                padding: 6px 18px;
-                font-size: 13px;
-                color: #475569;
-              "
-            >
-              <div style="margin-left: 15px">
-                <i
-                  class="fa fa-calendar"
-                  style="color: #3b82f6; margin-left: 6px"
-                ></i>
+          <div class="col-md-4 col-sm-12 text-center org-header-stats-col">
+            <div class="org-header-stats-badge">
+              <div class="org-header-stat-item-left">
+                <i class="fa fa-calendar text-primary"></i>
                 <span>امروز: 2 مهر 1405</span>
               </div>
-              <span style="color: #cbd5e1">|</span>
-              <div style="margin-right: 15px">
-                <i
-                  class="fa fa-eye"
-                  style="color: #10b981; margin-left: 6px"
-                ></i>
+              <span class="org-header-stat-divider">|</span>
+              <div class="org-header-stat-item-right">
+                <i class="fa fa-eye text-success"></i>
                 <span>بازدید: ۲,۴۵۰</span>
               </div>
             </div>
           </div>
 
           <!-- ۳. سمت چپ: دکمه فهرست + جستجو + شبکه‌های اجتماعی -->
-          <div
-            class="col-md-4 col-sm-12"
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: flex-end;
-              gap: 8px;
-              margin-bottom: 10px;
-            "
-          >
+          <div class="col-md-4 col-sm-12 org-header-actions-col">
             <!-- آیکون‌های اجتماعی -->
-            <div
-              class="social-icons"
-              style="display: flex; gap: 6px; margin-left: 10px"
-            >
-              <a
-                href="#"
-                title="اینستاگرام"
-                style="
-                  width: 34px;
-                  height: 34px;
-                  border-radius: 50%;
-                  background: #f1f5f9;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  color: #e1306c;
-                  text-decoration: none;
-                "
-              >
-                <i class="fa fa-instagram" style="font-size: 16px"></i>
+            <div class="social-icons org-social-icons">
+              <a href="#" title="اینستاگرام" class="org-social-link instagram">
+                <i class="fa fa-instagram"></i>
               </a>
-              <a
-                href="#"
-                title="تلگرام"
-                style="
-                  width: 34px;
-                  height: 34px;
-                  border-radius: 50%;
-                  background: #f1f5f9;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  color: #0088cc;
-                  text-decoration: none;
-                "
-              >
-                <i class="fa fa-paper-plane" style="font-size: 14px"></i>
+              <a href="#" title="تلگرام" class="org-social-link telegram">
+                <i class="fa fa-paper-plane"></i>
               </a>
-              <a
-                href="#"
-                title="پیام‌رسان رسمی"
-                style="
-                  width: 34px;
-                  height: 34px;
-                  border-radius: 50%;
-                  background: #f1f5f9;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  color: #f59e0b;
-                  text-decoration: none;
-                "
-              >
-                <i class="fa fa-check-circle" style="font-size: 16px"></i>
+              <a href="#" title="پیام‌رسان رسمی" class="org-social-link official">
+                <i class="fa fa-check-circle"></i>
               </a>
             </div>
 
             <!-- بخش جستجوی تعاملی هدر (نسخه کاملاً تراز و فیکس شده) -->
-            <div
-              class="header-search-wrapper"
-              style="
-                position: relative;
-                display: inline-block;
-                vertical-align: middle;
-              "
-            >
+            <div class="header-search-wrapper">
               <!-- دکمه جستجو -->
               <button
                 id="search-toggle-btn"
                 type="button"
                 title="جستجو در سایت"
-                style="
-                  background: #ffffff;
-                  border: 1px solid #e2e8f0;
-                  border-radius: 8px;
-                  width: 38px;
-                  height: 38px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  cursor: pointer;
-                  color: #2bcdc1;
-                  padding: 0;
-                  margin: 0;
-                  outline: none;
-                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-                  transition: all 0.2s;
-                "
               >
-                <i
-                  id="search-icon"
-                  class="fa fa-search"
-                  style="
-                    font-size: 15px;
-                    line-height: 0;
-                    display: block;
-                    margin: 0;
-                    padding: 0;
-                    transform: translateY(-1px);
-                  "
-                ></i>
+                <i id="search-icon" class="fa fa-search"></i>
               </button>
 
               <!-- باکس جستجوی بازشونده -->
-              <div
-                id="header-search-box"
-                style="
-                  display: none;
-                  position: absolute;
-                  left: 0;
-                  top: 46px;
-                  z-index: 1000;
-                  background: #ffffff;
-                  border: 1px solid #e2e8f0;
-                  border-radius: 8px;
-                  padding: 6px;
-                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-                  width: 260px;
-                  direction: rtl;
-                "
-              >
-                <form
-                  id="header-search-form"
-                  onsubmit="event.preventDefault()"
-                  style="margin: 0; display: flex; gap: 5px"
-                >
+              <div id="header-search-box">
+                <form id="header-search-form" onsubmit="event.preventDefault()">
                   <input
                     type="text"
                     id="header-search-input"
                     class="form-control"
                     placeholder="جستجو در سامانه اتحادیه..."
-                    style="
-                      height: 34px;
-                      font-size: 12px;
-                      border-radius: 6px;
-                      border: 1px solid #cbd5e1;
-                      box-shadow: none;
-                    "
                   />
-                  <button
-                    type="submit"
-                    class="btn btn-primary btn-sm"
-                    style="border-radius: 6px; padding: 0 12px; height: 34px"
-                  >
+                  <button type="submit" class="btn btn-primary btn-sm header-search-submit-btn">
                     <i class="fa fa-search"></i>
                   </button>
                 </form>
@@ -293,75 +109,59 @@
             <!-- دکمه فهرست -->
             <button
               type="button"
-              class="btn btn-primary visible-xs visible-sm"
+              class="btn btn-primary visible-xs visible-sm org-menu-toggle-btn"
               data-toggle="collapse"
               data-target="#unionMainMenu"
-              style="
-                border-radius: 8px;
-                font-weight: bold;
-                padding: 7px 16px;
-                background: #2563eb;
-                border: none;
-                display: flex;
-                align-items: center;
-              "
             >
-              <i class="fa fa-bars" style="margin-left: 6px"></i> فهرست
+              <i class="fa fa-bars"></i> فهرست
             </button>
           </div>
         </div>
       </div>
 
-      <div id="unionMainMenu" class="collapse custom-main-nav" style="background: #1e293b; border-top: 1px solid #334155; padding: 10px 0;">
+      <div id="unionMainMenu" class="collapse custom-main-nav">
         <div class="container">
-          <ul class="nav navbar-nav" style="margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; list-style: none; float: none;">
+          <ul class="nav navbar-nav">
             <!-- دکمه بازگشت به خانه و اصناف -->
             <li>
-              <a href="index.html" style="color: #cbd5e1; font-weight: 500; font-size: 13px; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;">
-                <i class="fa fa-home" style="color: #2bcdc1;"></i> صفحه اصلی
+              <a href="index.html">
+                <i class="fa fa-home"></i> صفحه اصلی
               </a>
             </li>
             <li>
-              <a href="index.html#representatives-section" style="color: #cbd5e1; font-weight: 500; font-size: 13px; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fa fa-th-large" style="color: #2bcdc1;"></i> لیست نمایندگی‌ها و اصناف
-              </a>
-            </li>
-            <li>
-              <a href="news.html" style="color: #cbd5e1; font-weight: 500; font-size: 13px; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fa fa-newspaper-o" style="color: #2bcdc1;"></i> اخبار و رویدادها
+              <a href="index.html#representatives-section">
+                <i class="fa fa-th-large"></i> لیست نمایندگی‌ها و اصناف
               </a>
             </li>
           </ul>
         </div>
       </div>
-
-
     </header>
     <!-- ================= پایان هدر سازمانی اتحادیه ================= -->
 
-  <div class="container" style="padding: 40px 15px;">
+  <div class="container union-page-container">
     <div class="row">
       
       <!-- ستون راست: اطلاعات و مشخصات اصلی -->
       <div class="col-md-8 col-sm-12">
         <div class="card-box">
-          <div style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="assets/images/logo.png" alt="لوگو اتحادیه" style="width: 70px; height: 70px; border-radius: 12px; background: #f8fafc; padding: 8px; border: 1px solid #e2e8f0; margin-left: 20px;">
+          <div class="union-intro-header">
+            <img src="assets/images/logo.png" alt="لوگو اتحادیه" class="union-intro-logo">
             <div>
               <span class="badge-tag">شناسه صنف: ۵۴۸۹</span>
-              <h2 style="margin: 8px 0 0; font-size: 22px; font-weight: bold; color: #0f172a;">اتحادیه صنف تاکسیرانی و حمل‌ونقل عمومی</h2>
+              <h2 class="union-intro-title">اتحادیه صنف تاکسیرانی و حمل‌ونقل عمومی</h2>
             </div>
           </div>
           
-          <hr style="border-top: 1px solid #f1f5f9; margin: 20px 0;">
+          <hr class="union-divider-light">
 
-          <h4 style="font-size: 16px; font-weight: bold; color: #334155; margin-bottom: 15px;">درباره و شرح وظایف اتحادیه</h4>
-          <p style="line-height: 1.9; color: #475569; font-size: 14px; text-align: justify;">
+          <h4 class="union-block-title">درباره و شرح وظایف اتحادیه</h4>
+          <p class="union-description-text">
             این اتحادیه به عنوان مرجع رسمی نظارت، ساماندهی و صدور پروانه کسب برای تمامی فعالان حوزه تاکسیرانی درون‌شهری، خطوط ویژه و آژانس‌های تلفنی فعالیت می‌کند. رسیدگی به شکایات مردمی، تمدید پروانه‌ها و ساماندهی سهمیه‌های سوخت و رفاهیات از وظایف این مجموعه است.
           </p>
 
-          <h4 style="font-size: 16px; font-weight: bold; color: #334155; margin: 25px 0 15px;">مدارک و خدمات قابل ارائه</h4>
-          <ul style="color: #475569; font-size: 14px; line-height: 2;">
+          <h4 class="union-block-title-spacing">مدارک و خدمات قابل ارائه</h4>
+          <ul class="union-services-list">
             <li>صدور و تمدید پروانه کسب ۵ ساله</li>
             <li>صدور دفترچه کارنامه فعالیت رانندگان</li>
             <li>معرفی‌نامه بیمه تأمین اجتماعی اصناف</li>
@@ -373,7 +173,7 @@
       <!-- ستون چپ: اطلاعات تماس و دبیرخانه -->
       <div class="col-md-4 col-sm-12">
         <div class="card-box">
-          <h4 style="font-size: 16px; font-weight: bold; color: #0f172a; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #2563eb; padding-bottom: 10px;">
+          <h4 class="sidebar-contact-title">
             اطلاعات تماس و نشانی
           </h4>
 
@@ -382,198 +182,194 @@
             <div><strong>رئیس اتحادیه:</strong> حاج محمد رضایی</div>
           </div>
 
-          <div class="info-row" style="flex-wrap: wrap; gap: 6px;">
-            <div style="display: flex; align-items: center; width: 100%;">
-              <i class="fa fa-clock-o text-warning" style="font-size: 18px; margin-left: 8px;"></i>
+          <div class="info-row info-row-wrap">
+            <div class="info-row-full">
+              <i class="fa fa-clock-o text-warning"></i>
               <strong>ساعات کاری:</strong>
             </div>
-            <div style="margin-right: 28px; width: 100%;">
+            <div class="info-row-badge-container">
               <span class="working-hours-badge">
                 شنبه تا چهارشنبه: ۸:۰۰ الی ۱۴:۰۰ <br class="visible-xs"> (پنجشنبه‌ها: ۸:۰۰ الی ۱۲:۰۰)
               </span>
             </div>
           </div>
 
+          <div class="info-row">
+            <i class="fa fa-map-marker"></i>
+            <div><strong>نشانی:</strong> تبریز، خیابان امام، نرسیده به چهارراه منصور، ساختمان اصناف، طبقه ۲</div>
+          </div>
 
-                <div class="info-row">
-                  <i class="fa fa-map-marker"></i>
-                  <div><strong>نشانی:</strong> تبریز، خیابان امام، نرسیده به چهارراه منصور، ساختمان اصناف، طبقه ۲</div>
+          <div class="contact-actions">
+            <a href="tel:04133445566" class="btn btn-call"><i class="fa fa-phone"></i> تماس تلفنی</a>
+            <a href="https://maps.google.com/?q=38.0667,46.2999" target="_blank" class="btn btn-route"><i class="fa fa-location-arrow"></i> مسیریابی</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         ۱. بخش نقشه موقعیت مکانی (انتقال به بالای نظرات با بالن نام محل)
+         ======================================================== -->
+    <div class="card map-card">
+      <div class="card-header map-card-header">
+        <h3 class="map-card-title">
+          <i class="fa fa-map-marker text-danger"></i> موقعیت مکانی دبیرخانه اتحادیه
+        </h3>
+        <a href="https://maps.google.com/?q=38.0667,46.2999" target="_blank" class="btn btn-default btn-xs map-external-btn">
+          <i class="fa fa-external-link"></i> باز کردن در Google Maps
+        </a>
+      </div>
+      <div class="card-body map-card-body">
+        <!-- کانتینر نقشه Leaflet -->
+        <div id="unionMap" class="map-canvas"></div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         ۲. بخش نظرات کاربران و سپس فرم ثبت نظر
+         ======================================================== -->
+    <div class="card comments-card comments-main-card">
+      <div class="card-header">
+        <h3><i class="fa fa-comments"></i> نظرات و دیدگاه‌های مراجعین</h3>
+        <p class="comments-lead">دیدگاه‌ها و امتیازهای اعضای صنف و شهروندان پس از بررسی نمایش داده می‌شوند.</p>
+      </div>
+
+      <div class="card-body">
+        <!-- الف) لیست نظرات کاربران (آمده در ابتدا) -->
+        <div class="comments-list-section">
+          <h4 class="comments-list-title"><i class="fa fa-list-alt"></i> دیدگاه‌های ثبت‌شده</h4>
+          <div id="comments-list" class="comments-list">
+            
+            <!-- کارت نظر ۱ -->
+            <div class="comment-card comment-card-item">
+              <div class="comment-card-header">
+                <div class="comment-author-box">
+                  <i class="fa fa-user-circle text-primary"></i>
+                  <strong class="comment-author-name">علی رضایی</strong>
+                  <span class="comment-badge-member">عضو صنف</span>
                 </div>
-
-                <div class="contact-actions">
-                  <a href="tel:04133445566" class="btn btn-call"><i class="fa fa-phone"></i> تماس تلفنی</a>
-                  <a href="https://maps.google.com/?q=38.0667,46.2999" target="_blank" class="btn btn-route"><i class="fa fa-location-arrow"></i> مسیریابی</a>
+                <div class="comment-meta-details">
+                  <span class="comment-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                  </span>
+                  <span>(۴ از ۵)</span>
+                  <span class="comment-meta-divider">|</span>
+                  <span>۱۴۰۵/۷/۱۷</span>
                 </div>
               </div>
+              <p class="comment-message">
+                مراحل تمدید پروانه سریع‌تر از قبل انجام شد، برخورد پرسنل هم بسیار مناسب و محترمانه بود.
+              </p>
             </div>
+
+            <!-- کارت نظر ۲ -->
+            <div class="comment-card comment-card-item">
+              <div class="comment-card-header">
+                <div class="comment-author-box">
+                  <i class="fa fa-user-circle text-success"></i>
+                  <strong class="comment-author-name">مریم کاظمی</strong>
+                  <span class="comment-badge-applicant">متقاضی پروانه کسب</span>
+                </div>
+                <div class="comment-meta-details">
+                  <span class="comment-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                  </span>
+                  <span>(۵ از ۵)</span>
+                  <span class="comment-meta-divider">|</span>
+                  <span>۱۴۰۵/۷/۱۷</span>
+                </div>
+              </div>
+              <p class="comment-message">
+                راهنمایی بخش استعلام مالیاتی کامل بود و پرونده بدون معطلی و در کمترین زمان تکمیل شد.
+              </p>
+            </div>
+
+            <!-- کارت نظر ۳ -->
+            <div class="comment-card comment-card-item">
+              <div class="comment-card-header">
+                <div class="comment-author-box">
+                  <i class="fa fa-user-circle text-muted"></i>
+                  <strong class="comment-author-name">حسین مرادی</strong>
+                  <span class="comment-badge-public">مراجعه‌کننده عمومی</span>
+                </div>
+                <div class="comment-meta-details">
+                  <span class="comment-stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                  </span>
+                  <span>(۳ از ۵)</span>
+                  <span class="comment-meta-divider">|</span>
+                  <span>۱۴۰۵/۷/۱۷</span>
+                </div>
+              </div>
+              <p class="comment-message">
+                اگر بخش پاسخگویی تلفنی تقویت شود، رفت‌وآمدهای حضوری برای سوالات ابتدایی کمتر خواهد شد.
+              </p>
+            </div>
+
           </div>
         </div>
 
-        <!-- ========================================================
-             ۱. بخش نقشه موقعیت مکانی (انتقال به بالای نظرات با بالن نام محل)
-             ======================================================== -->
-        <div class="card" style="margin-top: 25px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-          <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; background: #f8fafc; padding: 15px 20px;">
-            <h3 style="margin: 0; font-size: 17px; font-weight: bold; color: #0f172a;">
-              <i class="fa fa-map-marker text-danger"></i> موقعیت مکانی دبیرخانه اتحادیه
-            </h3>
-            <a href="https://maps.google.com/?q=38.0667,46.2999" target="_blank" class="btn btn-default btn-xs" style="border-radius: 4px;">
-              <i class="fa fa-external-link"></i> باز کردن در Google Maps
-            </a>
-          </div>
-          <div class="card-body" style="padding: 0;">
-            <!-- کانتینر نقشه Leaflet -->
-            <div id="unionMap" style="width: 100%; height: 350px;"></div>
-          </div>
-        </div>
+        <hr class="comments-divider-dashed">
 
-        <!-- ========================================================
-             ۲. بخش نظرات کاربران و سپس فرم ثبت نظر
-             ======================================================== -->
-        <div class="card comments-card" style="margin-top: 30px;">
-          <div class="card-header">
-            <h3><i class="fa fa-comments"></i> نظرات و دیدگاه‌های مراجعین</h3>
-            <p class="comments-lead">دیدگاه‌ها و امتیازهای اعضای صنف و شهروندان پس از بررسی نمایش داده می‌شوند.</p>
-          </div>
+        <!-- ب) فرم ثبت نظر جدید (منتقل شده به انتهای بخش، زیر همه نظرات) -->
+        <div class="comment-form-wrap">
+          <h4 class="comment-form-heading">
+            <i class="fa fa-pencil text-primary"></i> ثبت نظر و امتیاز شما
+          </h4>
 
-          <div class="card-body">
-            <!-- الف) لیست نظرات کاربران (آمده در ابتدا) -->
-            <div class="comments-list-section">
-              <h4 class="comments-list-title"><i class="fa fa-list-alt"></i> دیدگاه‌های ثبت‌شده</h4>
-                            <div id="comments-list" class="comments-list">
-                
-                <!-- کارت نظر ۱ -->
-                <div class="comment-card" style="border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; margin-bottom: 14px; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-                  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
-                    <div style="display: flex; align-items: center; gap: 8px;">
-                      <i class="fa fa-user-circle" style="font-size: 22px; color: #3b82f6;"></i>
-                      <strong style="color: #0f172a; font-size: 14px;">علی رضایی</strong>
-                      <span style="background: #e0f2fe; color: #0369a1; font-size: 11px; padding: 2px 8px; border-radius: 12px; margin-right: 4px;">عضو صنف</span>
-                    </div>
-                    <div style="font-size: 12px; color: #64748b; display: flex; align-items: center; gap: 8px;">
-                      <span style="color: #f59e0b;">
-                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
-                      </span>
-                      <span>(۴ از ۵)</span>
-                      <span style="color: #cbd5e1;">|</span>
-                      <span>۱۴۰۵/۷/۱۷</span>
-                    </div>
-                  </div>
-                  <p style="font-size: 13px; color: #334155; line-height: 1.8; margin: 0;">
-                    مراحل تمدید پروانه سریع‌تر از قبل انجام شد، برخورد پرسنل هم بسیار مناسب و محترمانه بود.
-                  </p>
-                </div>
-
-                <!-- کارت نظر ۲ -->
-                <div class="comment-card" style="border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; margin-bottom: 14px; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-                  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
-                    <div style="display: flex; align-items: center; gap: 8px;">
-                      <i class="fa fa-user-circle" style="font-size: 22px; color: #10b981;"></i>
-                      <strong style="color: #0f172a; font-size: 14px;">مریم کاظمی</strong>
-                      <span style="background: #dcfce7; color: #15803d; font-size: 11px; padding: 2px 8px; border-radius: 12px; margin-right: 4px;">متقاضی پروانه کسب</span>
-                    </div>
-                    <div style="font-size: 12px; color: #64748b; display: flex; align-items: center; gap: 8px;">
-                      <span style="color: #f59e0b;">
-                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                      </span>
-                      <span>(۵ از ۵)</span>
-                      <span style="color: #cbd5e1;">|</span>
-                      <span>۱۴۰۵/۷/۱۷</span>
-                    </div>
-                  </div>
-                  <p style="font-size: 13px; color: #334155; line-height: 1.8; margin: 0;">
-                    راهنمایی بخش استعلام مالیاتی کامل بود و پرونده بدون معطلی و در کمترین زمان تکمیل شد.
-                  </p>
-                </div>
-
-                <!-- کارت نظر ۳ -->
-                <div class="comment-card" style="border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; margin-bottom: 14px; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-                  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
-                    <div style="display: flex; align-items: center; gap: 8px;">
-                      <i class="fa fa-user-circle" style="font-size: 22px; color: #64748b;"></i>
-                      <strong style="color: #0f172a; font-size: 14px;">حسین مرادی</strong>
-                      <span style="background: #f1f5f9; color: #475569; font-size: 11px; padding: 2px 8px; border-radius: 12px; margin-right: 4px;">مراجعه‌کننده عمومی</span>
-                    </div>
-                    <div style="font-size: 12px; color: #64748b; display: flex; align-items: center; gap: 8px;">
-                      <span style="color: #f59e0b;">
-                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                      </span>
-                      <span>(۳ از ۵)</span>
-                      <span style="color: #cbd5e1;">|</span>
-                      <span>۱۴۰۵/۷/۱۷</span>
-                    </div>
-                  </div>
-                  <p style="font-size: 13px; color: #334155; line-height: 1.8; margin: 0;">
-                    اگر بخش پاسخگویی تلفنی تقویت شود، رفت‌وآمدهای حضوری برای سوالات ابتدایی کمتر خواهد شد.
-                  </p>
-                </div>
-
+          <form id="comment-form" class="comment-form" novalidate>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="comment-name">نام و نام خانوادگی <span class="required">*</span></label>
+                <input type="text" id="comment-name" class="form-control" placeholder="مثال: رضا محمدی" required>
               </div>
-
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="comment-email">ایمیل (نمایش داده نمی‌شود) <span class="required">*</span></label>
+                <input type="email" id="comment-email" class="form-control" placeholder="example@email.com" required>
+              </div>
             </div>
 
-            <hr style="border-top: 1px dashed #cbd5e1; margin: 35px 0;">
-
-            <!-- ب) فرم ثبت نظر جدید (منتقل شده به انتهای بخش، زیر همه نظرات) -->
-            <div class="comment-form-wrap" style="background: #f8fafc; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0;">
-              <h4 style="margin-top: 0; margin-bottom: 20px; font-weight: bold; color: #0f172a;">
-                <i class="fa fa-pencil text-primary"></i> ثبت نظر و امتیاز شما
-              </h4>
-
-              <form id="comment-form" class="comment-form" novalidate>
-                <div class="row">
-                  <div class="col-md-6 col-sm-12 form-group">
-                    <label for="comment-name">نام و نام خانوادگی <span class="required">*</span></label>
-                    <input type="text" id="comment-name" class="form-control" placeholder="مثال: رضا محمدی" required>
-                  </div>
-                  <div class="col-md-6 col-sm-12 form-group">
-                    <label for="comment-email">ایمیل (نمایش داده نمی‌شود) <span class="required">*</span></label>
-                    <input type="email" id="comment-email" class="form-control" placeholder="example@email.com" required>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6 col-sm-12 form-group">
-                    <label for="comment-role">نوع مراجعه‌کننده</label>
-                    <select id="comment-role" class="form-control">
-                      <option value="عضو صنف">عضو صنف</option>
-                      <option value="متقاضی پروانه کسب">متقاضی پروانه کسب</option>
-                      <option value="مراجعه‌کننده عمومی" selected>مراجعه‌کننده عمومی</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6 col-sm-12 form-group">
-                    <label>امتیاز شما به اتحادیه</label>
-                      <div class="star-rating" id="star-rating" style="direction: ltr; font-size: 20px; cursor: pointer;">
-                      <i class="fa fa-star-o" data-rate="1"></i>
-                      <i class="fa fa-star-o" data-rate="2"></i>
-                      <i class="fa fa-star-o" data-rate="3"></i>
-                      <i class="fa fa-star-o" data-rate="4"></i>
-                      <i class="fa fa-star-o" data-rate="5"></i>
-                  </div>
-                  <!-- امتیاز انتخاب‌شده اینجا ذخیره می‌شود -->
-                  <input type="hidden" id="cm-rate" value="5">
-                </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="comment-role">نوع مراجعه‌کننده</label>
+                <select id="comment-role" class="form-control">
+                  <option value="عضو صنف">عضو صنف</option>
+                  <option value="متقاضی پروانه کسب">متقاضی پروانه کسب</option>
+                  <option value="مراجعه‌کننده عمومی" selected>مراجعه‌کننده عمومی</option>
+                </select>
               </div>
-
-                <div class="form-group">
-                  <label for="comment-text">متن دیدگاه یا پیشنهاد <span class="required">*</span></label>
-                  <textarea id="comment-text" class="form-control" rows="4" placeholder="تجربه یا نظر خود را درباره خدمات و پاسخگویی بنویسید..." required></textarea>
+              <div class="col-md-6 col-sm-12 form-group">
+                <label>امتیاز شما به اتحادیه</label>
+                <div class="star-rating star-rating-box" id="star-rating">
+                  <i class="fa fa-star-o" data-rate="1"></i>
+                  <i class="fa fa-star-o" data-rate="2"></i>
+                  <i class="fa fa-star-o" data-rate="3"></i>
+                  <i class="fa fa-star-o" data-rate="4"></i>
+                  <i class="fa fa-star-o" data-rate="5"></i>
                 </div>
-
-                <div class="form-actions">
-                  <button type="submit" class="btn btn-primary"><i class="fa fa-send"></i> ثبت و ارسال نظر</button>
-                  <button type="reset" class="btn btn-default">پاک کردن فرم</button>
-                </div>
-              </form>
+                <!-- امتیاز انتخاب‌شده اینجا ذخیره می‌شود -->
+                <input type="hidden" id="cm-rate" value="5">
+              </div>
             </div>
 
-          </div>
+            <div class="form-group">
+              <label for="comment-text">متن دیدگاه یا پیشنهاد <span class="required">*</span></label>
+              <textarea id="comment-text" class="form-control" rows="4" placeholder="تجربه یا نظر خود را درباره خدمات و پاسخگویی بنویسید..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary"><i class="fa fa-send"></i> ثبت و ارسال نظر</button>
+              <button type="reset" class="btn btn-default">پاک کردن فرم</button>
+            </div>
+          </form>
         </div>
 
       </div>
     </div>
+
   </div>
     <!-- ================= پایان بخش نقشه ================= -->
+
 
   <!-- اسکریپت بخش نظرات -->
   <script src="assets/js/union-comments.js"></script>
